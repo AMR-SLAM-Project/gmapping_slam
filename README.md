@@ -1,4 +1,4 @@
-# AMR-SLAM
+# gmapping_slam
 
 [![Reference](https://img.shields.io/badge/Reference-slam__gmapping__Humble-blue?logo=github&logoColor=white&logoWidth=20)](https://github.com/GMHadou/slam_gmapping_Humble)
 </br>
