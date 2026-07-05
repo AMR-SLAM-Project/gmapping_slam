@@ -1,10 +1,10 @@
 # AMR-SLAM
 
-Implementation of SLAM algorithms on a customized TurtleBot3 Buger.
-
-![Status](https://img.shields.io/badge/Status-Work--in--Progress-orange)
+[![Reference](https://img.shields.io/badge/Reference-slam__gmapping__Humble-blue?logo=github&logoColor=white&logoWidth=20)](https://github.com/GMHadou/slam_gmapping_Humble)
 </br>
-![Started](https://img.shields.io/badge/Started-March%201%2C%202026-blue)
+[![YouTube](https://img.shields.io/badge/YouTube-Demo-red?logo=youtube&logoColor=white)](YOUR_VIDEO_LINK_HERE)
+
+Implementation of SLAM algorithms on a customized TurtleBot3 Buger.
 
 ---
 
