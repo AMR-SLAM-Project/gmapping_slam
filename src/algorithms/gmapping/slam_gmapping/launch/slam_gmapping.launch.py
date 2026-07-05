@@ -23,6 +23,7 @@ def generate_launch_description():
     
     return LaunchDescription([
         use_sim_time_arg,
+        launch_rviz_arg,
         Node(
             package='rviz2',
             executable='rviz2',
