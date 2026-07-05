@@ -1,0 +1,54 @@
+slam_gmapping:
+  ros__parameters:
+    base_frame: "base_link" # robot frame
+    odom_frame: "odom" # odometry frame
+    map_frame:  "map" # map frame
+    map_update_interval: 5.0 # map 갱신 주기
+    
+    # Default: autodetect. Set maxUrange and maxRange for manual settings
+    # maxUrange: 10.0 # 실제 사용할 최대 거리
+    # maxRange: 10.0 # 라이다 최대 범위
+
+    minimumScore: 0 # 스캔 매칭 최소 점수
+    
+    sigma: 0.05 # 스캔 매칭 시 허용 오차 범위
+    kernelSize: 1 # 매칭 탐색 범위(클수록 넓게 탐색)
+    lstep: 0.05 # 위치 최적화 스텝 크기(m)
+    astep: 0.05 # 각도 최적화 스텝 크기(rad)
+    iterations: 5 # 스캔 매칭 반복 횟수
+    lsigma: 0.075 # 라이다 빔 노이즈 모델
+    ogain: 3.0 # 가중치 계산 스무딩
+    lskip: 0 # n개 빔마다 건너뜀 (0은 전부 사용)
+
+    # particle 이동시킬 때 추가하는 노이즈
+    srr: 0.1 # 직진 중 직진 오차
+    srt: 0.2 # 직진 중 회전 오차
+    str: 0.1 # 회전 중 직진 오차
+    stt: 0.2 # 회전 중 회전 오차
+
+    linearUpdate: 1.0 # 몇 m 움직여야 업데이트할지
+    angularUpdate: 0.5 # 몇 rad 회전해야 업데이트할지
+    temporalUpdate: -1.0 # 시간 기반 업데이트 (-1은 비활성화)
+
+    resampleThreshold: 0.5 # 리샘플링 주기(낮을수록 자주)
+    particles: 30 # 파티클 수
+
+    # 맵 크기 & 해상도
+    xmin: -10.0
+    ymin: -10.0
+    xmax: 10.0
+    ymax: 10.0
+    delta: 0.05 # 맵 해상도(커질수록 저해상도)
+
+    llsamplerange: 0.01 # 위치 재탐색 범위(m)
+    llsamplestep: 0.01 # 위치 재탐색 스텝
+    lasamplerange: 0.005 # 각도 재탐색 범위(rad)
+    lasamplestep: 0.005 # 각도 재탐색 스텝
+
+    transform_publish_period: 0.05 # TF 발행 주기(초)
+    occ_thresh: 0.25 # 이 값 이상이면 점유로 판단
+
+    tf_delay: 0.1 # TF 버퍼 지연 시간(초)
+
+
+# particles, linearUpdate, angularUpdate, delta
